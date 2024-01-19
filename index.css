@@ -1,0 +1,83 @@
+*{
+    margin: 0; padding: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.products{
+    width: 100%;
+    background-color: #eee;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+}
+.shoes_product{
+    background-color: white;
+    margin: 10px;
+    padding: 40px 10px;
+    box-shadow: 0px 4px 9px #33333380;
+    border-radius: 7px;
+}
+.shoes_product img{
+    width: 100%;
+}
+    
+.shoes_product del{
+    text-decoration: line-through;
+    color: #333;
+}
+.shoes_product .price{
+    font-size: 1.5rem;
+    color: crimson;
+}
+.shoes_product button{
+    width: 100%;
+    margin-top: 5px;
+    padding: 10px 0px;
+    font-size: 1.3rem;
+    background-color: transparent;
+    border: 1px solid blue;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.shoes_product button:hover{
+    background-color: rgb(6, 6, 212);
+    color: white;
+}
+.shoes_product .add{
+    background-color: blue;
+    color: white;
+}
+@media(width < 1272px){
+    .products{
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+    }
+}
+@media(width < 1060px){
+    .products{
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+@media(width < 848px){
+    .products{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media(width < 636px){
+    .products{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media(width < 424px){
+    .products{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+@med
